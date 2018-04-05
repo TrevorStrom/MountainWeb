@@ -14,18 +14,16 @@ body {
   height: 80px;
   background-color: #000;
   opacity: .6;
-
 }
 
 #mainNav ul {
   display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	-webkit-box-align: center;
-	align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -39,23 +37,24 @@ body {
 #mainNav li {
   flex-grow: 1;
 }
- #mainNav a {
-   text-decoration: none;
- }
+
+#mainNav a {
+  text-decoration: none;
+}
 
 a:link, a::after, a::before, a:visited {
-   color: #fff;
- }
+  color: #fff;
+}
 
- body, html {
-   margin: 0;
-   height: 100%;
- }
+body, html {
+  margin: 0;
+  height: 100%;
+}
 
- main {
-   margin: 0;
-   height: 100%;
- }
+main {
+  margin: 0;
+  height: 100%;
+}
 
 #welcome_panel {
   display: flex;
@@ -64,6 +63,7 @@ a:link, a::after, a::before, a:visited {
   flex-direction: row;
   flex-basis: 0;
 }
+
 .page_panel {
   flex-grow: 1;
   height: 70%;
@@ -71,21 +71,34 @@ a:link, a::after, a::before, a:visited {
 
 #left_page_panel_back {
   background-color: #fff;
-  opacity: .4;
-  width: 75%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 15px;
 }
 
-.page_panel > div > p {
-  text-align: center;
-  margin-top: 25%;
-  font-size: 2.6em;
-  color: #000;
-  opacity: 10;
-}
-
 #right_page_panel {
   flex-grow: 2;
 }
+
+@media screen and (min-device-width: 900px) {
+  #left_page_panel_back {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: relative;
+    top: 45%;
+    margin-left: 5%;
+    height: 75px;
+    border-radius: 15px;
+    font-size: .7em;
+    justify-content: center;
+    align-items: center;
+  }
+  #left_page_panel_back>h2 {
+    margin: 0;
+    font-size: 2.1em;
+    color: #000;
+  }
+}
+
+;
