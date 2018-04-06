@@ -81,6 +81,10 @@ main {
   flex-grow: 2;
 }
 
+#mainNav:hover {
+  opacity: .8;
+}
+
 @media screen and (min-device-width: 900px) {
   #left_page_panel_back {
     display: flex;
