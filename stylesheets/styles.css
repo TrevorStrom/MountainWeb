@@ -96,7 +96,8 @@ main {
   }
   #left_page_panel_back>h2 {
     margin: 0;
-    font-size: 2.1em;
+    font-size: 2.8em;
+    font-family: 'Archivo Narrow';
     color: #000;
   }
 }
