@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Eau Claire Mountain Biking</title>
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Bitter|Noto+Sans|Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Bitter|Noto+Sans|Rubik|Nunito" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
 </head>
 
@@ -12,8 +12,8 @@
   <header>
     <nav id="mainNav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="video.html">Videos</a></li>
         <li><a href="#">Photos</a></li>
         <li><a href="#">Events</a></li>
       </ul>
@@ -22,21 +22,32 @@
   <main>
     <div id="welcome_panel">
       <section class="page_panel">
-        <div id="left_page_panel_back">
-          <h2 id="left_page_panel_wel">
-              Welcome to Eau Claire Mountain Biking.
-            </h2>
-        </div>
+        <img src="images/coverPhoto.jpg" alt="Woods rider" id="coverPhoto">
       </section>
-      <section class="page_panel" id="right_page_panel">
-        <p>
-
-        </p>
+      <section class="page_panel notfirst siteInfo">
+        <article class="info">
+          <a href="#">
+            <img src="images/mtbIconpng.png" alt="bike icon" class="icon">
+            <p>Biking News in Eau Claire</p>
+          </a>
+        </article>
+        <article class="info">
+          <a href="#">
+            <img src="images/trailIcon.png" alt="trail icon" class="icon">
+            <p>Trails in Eau Claire county</p>
+          </a>
+        </article>
+        <article class="info">
+          <a href="#">
+            <img src="images/videoIcon.png" alt="video icon" class="icon">
+            <p>Biking Videos</p>
+          </a>
+        </article>
       </section>
     </div>
   </main>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-			  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="js/my.js"></script>
+
 </html>
