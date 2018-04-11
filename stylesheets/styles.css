@@ -144,3 +144,20 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.video {
+  padding: 10px 10px 10px 10px;
+}
+
+.youtube-player {
+  height: 315px;
+  width: 420px;
+}
