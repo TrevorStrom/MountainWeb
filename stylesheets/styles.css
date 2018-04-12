@@ -157,7 +157,18 @@ main {
   padding: 10px 10px 10px 10px;
 }
 
+.video h3 {
+  padding-left: 20px;
+}
+
 .youtube-player {
-  height: 315px;
-  width: 420px;
+  height: auto;
+  width: auto;
+}
+
+.thumbNail {
+  display: flex;
+  width: 480px;
+  height: 360px;
+  padding: 10px 10px 10px 10px;
 }

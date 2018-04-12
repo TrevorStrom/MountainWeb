@@ -8,6 +8,7 @@
         for (n = 0; n < v.length; n++) {
           div = document.createElement("div");
           div.setAttribute("data-id", v[n].dataset.id);
+          div.setAttribute("class", "videoThumb")
           div.innerHTML = labnolThumb(v[n].dataset.id);
           div.onclick = labnolIframe;
           v[n].appendChild(div);
@@ -15,7 +16,7 @@
       });
 
     function labnolThumb(id) {
-      var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+      var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" class="thumbNail">',
         play = '<div class="play"></div>';
       return thumb.replace("ID", id) + play;
     }
@@ -26,5 +27,6 @@
       iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
       iframe.setAttribute("frameborder", "0");
       iframe.setAttribute("allowfullscreen", "1");
+      iframe.setAttribute("class", "youtube-player")
       this.parentNode.replaceChild(iframe, this);
     }
