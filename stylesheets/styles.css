@@ -149,8 +149,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
+  justify-content: space-evenly;
 }
 
 .video {
@@ -166,9 +165,23 @@ main {
   width: auto;
 }
 
-.thumbNail {
+.videoThumb {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 270px;
+  width: 480px;
+  overflow: hidden;
+}
+
+.thumbNail {
   width: 480px;
   height: 360px;
   padding: 10px 10px 10px 10px;
+  vertical-align: middle;
+}
+
+#clickedVideo {
+  width: 1440px;
+  height: 1080px;
 }

@@ -27,6 +27,7 @@
       iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
       iframe.setAttribute("frameborder", "0");
       iframe.setAttribute("allowfullscreen", "1");
-      iframe.setAttribute("class", "youtube-player")
+      iframe.setAttribute("class", "youtube-player");
+      iframe.setAttribute("id", "clickedVideo")
       this.parentNode.replaceChild(iframe, this);
     }
